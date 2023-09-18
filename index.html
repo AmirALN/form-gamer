@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Gamer form</title>
+</head>
+<body>
+  <main>
+    <header class="header">
+      <h1>Vad för typ av Gamer är du?</h1>
+    </header>
+    <section>
+      <form action="" autocomplete="off">
+        <label for="namn">För och efternamn:</label>
+        <input type="text" id="namn" name="namn" required autofocus />
+
+        <label for="dff">Födelsedag:</label>
+        <input type="date" id="dff" name="dff" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="konsoll">Vilken typ av konsoll föredrar du att spela med?</label>
+        <select id="konsoll" name="konsoll">
+            <option value="ps5">PlayStation 5</option>
+            <option value="ps4">PlayStation 4</option>
+            <option value="xbox-series-x">Xbox Series X</option>
+            <option value="xbox-one">Xbox One</option>
+            <option value="switch">Nintendo Switch</option>
+            <option value="pc">PC</option>
+            <option value="other">Annan (ange i meddelande nedan)</option>
+        </select>
+
+        <label for="otherConsole">Om du valde "Annan", specificera här:</label>
+        <input type="text" id="otherConsole" name="otherConsole">
+
+        <div class="form__checkbox">
+            <label>
+                <input type="checkbox" name="gameOffers" />
+                Jag vill få erbjudanden när nya spel släpps till denna konsoll.
+            </label>
+        </div>
+        
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+</body>
+</html>
